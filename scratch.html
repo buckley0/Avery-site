@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baseball | Avery Buckley</title>
+  <link rel="stylesheet" href="css/style2.css"/>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <div id="top"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">America's Pastime</h1>
+      <p class="site-subtitle">A love letter to baseball — by Avery Buckley</p>
+      <!-- On-page navigation anchors -->
+      <nav class="scratch-nav">
+        <a href="#top">Top</a>
+        <a href="#why-baseball">Why Baseball</a>
+        <a href="#stats">Stats</a>
+        <a href="#history">History</a>
+        <a href="#tableau-section">Data Viz</a>
+        <a href="#watch">Watch</a>
+        <a href="#webapp">Web App</a>
+        <a href="index.html">← Professional Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== WHY BASEBALL ========== -->
+  <section class="content-section" id="why-baseball">
+    <div class="section-inner">
+      <h2 class="section-title">Why Baseball?</h2>
+      <p>
+        Baseball is more than a sport — it is a mirror held up to American history. From the
+        integration of the leagues to the statistics revolution sparked by <em>Moneyball</em>,
+        baseball has always been a data-driven, story-rich institution unlike any other.
+      </p>
+      <p>
+        As a Political Science student, I see in baseball the same forces I study every day:
+        strategy, leadership, pressure, and the cold logic of numbers meeting the warm chaos of
+        human performance.
+      </p>
+
+      <!-- IMAGE -->
+      <div class="img-wrapper">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/2019_World_Series_Game_7_%2848926702742%29.jpg/1280px-2019_World_Series_Game_7_%2848926702742%29.jpg"
+          alt="World Series Game 7, 2019"
+          class="feature-img"
+        />
+        <p class="img-caption">World Series Game 7, 2019 — Nationals vs. Astros (Wikimedia Commons)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS & LISTS ========== -->
+  <section class="content-section alt-bg" id="stats">
+    <div class="section-inner">
+      <h2 class="section-title">What Makes a Great Player?</h2>
+      <p>
+        Great baseball players are defined by a combination of physical tools and mental acuity.
+        Here is a breakdown of the key attributes — ordered by category, with specific skills
+        nested within each:
+      </p>
+
+      <!-- ORDERED LIST with nested UNORDERED LISTS (requirement) -->
+      <ol class="main-list">
+        <li>
+          <strong>Offensive Skills</strong>
+          <ul class="nested-list">
+            <li>Plate discipline (walk rate, strikeout rate)</li>
+            <li>Contact ability (batting average, hard-hit %)</li>
+            <li>Power (home run rate, slugging percentage)</li>
+            <li>Speed on the bases (stolen base efficiency)</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Pitching &amp; Defense</strong>
+          <ul class="nested-list">
+            <li>Velocity and pitch movement (spin rate)</li>
+            <li>Command and control (walk rate, zone %)</li>
+            <li>Fielding range and arm strength (OAA)</li>
+            <li>Catcher framing and blocking skills</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Mental &amp; Intangible Qualities</strong>
+          <ul class="nested-list">
+            <li>Performance under pressure (WPA — Win Probability Added)</li>
+            <li>Consistent preparation and film study</li>
+            <li>Adaptability across a long 162-game season</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Advanced Analytics (Sabermetrics)</strong>
+          <ul class="nested-list">
+            <li>WAR (Wins Above Replacement) — the gold standard</li>
+            <li>wRC+ (Weighted Runs Created Plus)</li>
+            <li>FIP (Fielding Independent Pitching)</li>
+            <li>BABIP (Batting Average on Balls In Play)</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== HISTORY ========== -->
+  <section class="content-section" id="history">
+    <div class="section-inner">
+      <h2 class="section-title">A Brief History of the Game</h2>
+      <div class="history-grid">
+        <div class="history-card">
+          <span class="history-year">1869</span>
+          <p>The Cincinnati Red Stockings become the first openly all-professional baseball team.</p>
+        </div>
+        <div class="history-card">
+          <span class="history-year">1947</span>
+          <p>Jackie Robinson breaks Major League Baseball's color barrier, joining the Brooklyn Dodgers.</p>
+        </div>
+        <div class="history-card">
+          <span class="history-year">1994</span>
+          <p>A player's strike cancels the World Series for the first time in 90 years.</p>
+        </div>
+        <div class="history-card">
+          <span class="history-year">2002</span>
+          <p>The Oakland A's under Billy Beane pioneer sabermetric analytics — the <em>Moneyball</em> era begins.</p>
+        </div>
+        <div class="history-card">
+          <span class="history-year">2023</span>
+          <p>New pitch clock rules dramatically speed up the game, cutting average game time by ~26 minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TABLEAU ========== -->
+  <section class="content-section alt-bg" id="tableau-section">
+    <div class="section-inner">
+      <h2 class="section-title">Baseball by the Numbers</h2>
+      <p>
+        The visualization below explores MLB statistics interactively. Hover over data points,
+        filter by team or season, and explore the data yourself.
+      </p>
+      <!-- LIVE EMBEDDED TABLEAU (requirement) -->
+      <div class="tableau-wrapper">
+        <div class='tableauPlaceholder' id='viz1' style='position: relative; width:100%; padding-bottom: 56%;'>
+          <noscript>
+            <a href='#'>
+              <img alt='MLB Stats Dashboard' src='https://public.tableau.com/static/images/ML/MLBStats/Dashboard1/1_rss.png' style='border: none'/>
+            </a>
+          </noscript>
+          <object class='tableauViz' style='position:absolute;top:0;left:0;width:100%;height:100%;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
+            <param name='embed_code_version' value='3'/>
+            <param name='site_root' value=''/>
+            <param name='name' value='BaseballSalariesandStatistics/BaseballSalaryDashboard'/>
+            <param name='tabs' value='no'/>
+            <param name='toolbar' value='yes'/>
+            <param name='animate_transition' value='yes'/>
+            <param name='display_static_image' value='yes'/>
+            <param name='display_spinner' value='yes'/>
+            <param name='display_overlay' value='yes'/>
+            <param name='display_count' value='yes'/>
+            <param name='language' value='en-US'/>
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+      </div>
+      <p class="tableau-note">
+        Note: The Tableau visualization requires an internet connection to load. It will not display when viewing the file locally, but will work once hosted online.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== YOUTUBE VIDEO ========== -->
+  <section class="content-section" id="watch">
+    <div class="section-inner">
+      <h2 class="section-title">Watch: Greatest Moments</h2>
+      <p>
+        No highlight reel captures baseball quite like this compilation of iconic moments.
+        From walk-off home runs to perfect games — this is why we love the sport.
+      </p>
+      <!-- EMBEDDED YOUTUBE (requirement) -->
+      <div class="video-wrapper">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/C7EMwNFHkb0"
+          title="Greatest Baseball Moments"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="video-note">Video may not load when viewed locally — it will work once the site is hosted online.</p>
+    </div>
+  </section>
+
+  <!-- ========== WEB APP LINK ========== -->
+  <section class="content-section alt-bg" id="webapp">
+    <div class="section-inner text-center-div">
+      <h2 class="section-title">Test Your Baseball Knowledge</h2>
+      <p>
+        Think you know your sabermetrics? Your World Series champions? Your Hall of Famers?
+        Put your baseball IQ to the test in this AI-powered trivia challenge.
+      </p>
+      <a href="webapp.html" class="cta-button">Play Baseball Trivia →</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="scratch-footer">
+    <p>Avery Jayce Buckley · BYU Political Science · <a href="index.html">Back to Professional Site</a></p>
+    <!-- On-page anchor back to top (requirement) -->
+    <p><a href="#top" class="top-link">↑ Back to Top</a></p>
+  </footer>
+
+</body>
+</html>
