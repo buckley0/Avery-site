@@ -14,7 +14,6 @@
     <div class="header-inner">
       <h1 class="site-title">America's Pastime</h1>
       <p class="site-subtitle">A love letter to baseball — by Avery Buckley</p>
-      <!-- On-page navigation anchors -->
       <nav class="scratch-nav">
         <a href="#top">Top</a>
         <a href="#why-baseball">Why Baseball</a>
@@ -43,14 +42,19 @@
         human performance.
       </p>
 
-      <!-- IMAGE -->
+      <!-- IMAGE: Chase Field, site of 2001 World Series Game 7 -->
       <div class="img-wrapper">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/2019_World_Series_Game_7_%2848926702742%29.jpg/1280px-2019_World_Series_Game_7_%2848926702742%29.jpg"
-          alt="World Series Game 7, 2019"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Chase_Field_and_Downtown_Phoenix_%2848013326986%29.jpg/1280px-Chase_Field_and_Downtown_Phoenix_%2848013326986%29.jpg"
+          alt="Chase Field, Phoenix — site of the 2001 World Series Game 7"
           class="feature-img"
+          onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chase_Field_retractable_roof.jpg/1280px-Chase_Field_retractable_roof.jpg';"
         />
-        <p class="img-caption">World Series Game 7, 2019 — Nationals vs. Astros (Wikimedia Commons)</p>
+        <p class="img-caption">
+          Chase Field, Phoenix, Arizona — home of the Arizona Diamondbacks and site of the legendary
+          2001 World Series Game 7, where Luis Gonzalez's walk-off single defeated the New York Yankees.
+          (Wikimedia Commons)
+        </p>
       </div>
     </div>
   </section>
@@ -65,7 +69,6 @@
         nested within each:
       </p>
 
-      <!-- ORDERED LIST with nested UNORDERED LISTS (requirement) -->
       <ol class="main-list">
         <li>
           <strong>Offensive Skills</strong>
@@ -124,8 +127,8 @@
           <p>A player's strike cancels the World Series for the first time in 90 years.</p>
         </div>
         <div class="history-card">
-          <span class="history-year">2002</span>
-          <p>The Oakland A's under Billy Beane pioneer sabermetric analytics — the <em>Moneyball</em> era begins.</p>
+          <span class="history-year">2001</span>
+          <p>Luis Gonzalez's walk-off single in Game 7 gives the Arizona Diamondbacks their first World Series title over the Yankees.</p>
         </div>
         <div class="history-card">
           <span class="history-year">2023</span>
@@ -140,22 +143,21 @@
     <div class="section-inner">
       <h2 class="section-title">Baseball by the Numbers</h2>
       <p>
-        The visualization below explores MLB statistics interactively. Hover over data points,
-        filter by team or season, and explore the data yourself.
+        The visualization below explores MLB batting statistics interactively. Hover over data
+        points and explore the numbers yourself.
       </p>
-      <!-- LIVE EMBEDDED TABLEAU (requirement) -->
       <div class="tableau-wrapper">
-        <div class='tableauPlaceholder' id='viz1' style='position: relative; width:100%; padding-bottom: 56%;'>
+        <div class='tableauPlaceholder' id='viz1' style='position: relative'>
           <noscript>
             <a href='#'>
-              <img alt='MLB Stats Dashboard' src='https://public.tableau.com/static/images/ML/MLBStats/Dashboard1/1_rss.png' style='border: none'/>
+              <img alt='MLB Batting Stats' src='https://public.tableau.com/static/images/ML/MLBBattingStats/Dashboard1/1_rss.png' style='border: none'/>
             </a>
           </noscript>
-          <object class='tableauViz' style='position:absolute;top:0;left:0;width:100%;height:100%;'>
+          <object class='tableauViz' style='display:none;'>
             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
             <param name='embed_code_version' value='3'/>
             <param name='site_root' value=''/>
-            <param name='name' value='BaseballSalariesandStatistics/BaseballSalaryDashboard'/>
+            <param name='name' value='MLBBattingStats/Dashboard1'/>
             <param name='tabs' value='no'/>
             <param name='toolbar' value='yes'/>
             <param name='animate_transition' value='yes'/>
@@ -169,40 +171,34 @@
         <script type='text/javascript'>
           var divElement = document.getElementById('viz1');
           var vizElement = divElement.getElementsByTagName('object')[0];
-          vizElement.style.width='100%';
-          vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+          vizElement.style.width = '100%';
+          vizElement.style.height = '600px';
           var scriptElement = document.createElement('script');
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
           vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
       </div>
-      <p class="tableau-note">
-        Note: The Tableau visualization requires an internet connection to load. It will not display when viewing the file locally, but will work once hosted online.
-      </p>
+      <p class="tableau-note">Interactive Tableau visualization — requires internet connection to load.</p>
     </div>
   </section>
 
   <!-- ========== YOUTUBE VIDEO ========== -->
   <section class="content-section" id="watch">
     <div class="section-inner">
-      <h2 class="section-title">Watch: Greatest Moments</h2>
+      <h2 class="section-title">Watch: Corbin Carroll Highlights</h2>
       <p>
-        No highlight reel captures baseball quite like this compilation of iconic moments.
-        From walk-off home runs to perfect games — this is why we love the sport.
+        Corbin Carroll is my favorite player on the Arizona Diamondbacks — a blazing speedster
+        with elite defense and an electric bat. Watch some of his best moments below.
       </p>
-      <!-- EMBEDDED YOUTUBE (requirement) -->
       <div class="video-wrapper">
         <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/C7EMwNFHkb0"
-          title="Greatest Baseball Moments"
+          src="https://www.youtube.com/embed/ZSTgszBtoDs"
+          title="Corbin Carroll Highlight Reel"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
       </div>
-      <p class="video-note">Video may not load when viewed locally — it will work once the site is hosted online.</p>
     </div>
   </section>
 
@@ -221,7 +217,6 @@
   <!-- ========== FOOTER ========== -->
   <footer class="scratch-footer">
     <p>Avery Jayce Buckley · BYU Political Science · <a href="index.html">Back to Professional Site</a></p>
-    <!-- On-page anchor back to top (requirement) -->
     <p><a href="#top" class="top-link">↑ Back to Top</a></p>
   </footer>
 
